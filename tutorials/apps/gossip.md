@@ -9,7 +9,7 @@ categories: [applications]
 
 The `gossip` application is an example showing how the Plumtree gossip implementation functions.
 
-`gossip` is distributed as part of the binary distribution of Apache Tuweni, which you can download from this [page](/download)
+`gossip` is distributed as part of the binary distribution of Tuweni, which you can download from this [page](/download)
 
 {%highlight bash%}
 ./gossip --help

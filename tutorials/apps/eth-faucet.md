@@ -45,7 +45,7 @@ faucet:
 wallet:
   path: wallet.key
 banner: >
-  Apache Tuweni Faucet example.
+  Tuweni Faucet example.
 
            `:oyhdhhhhhhyo-`
          :yds/.        ./sdy:

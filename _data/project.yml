@@ -15,45 +15,19 @@
 #
 # Apache Project configurations
 #
-name: Apache Tuweni
+name: Tuweni
 short_name: Tuweni
 unix_name: tuweni
 incubator_name: incubator-tuweni
 incubator_slash_name: incubator/tuweni
 tagline: Jumpstart your next blockchain application
-description: Apache Tuweni is a set of libraries and other tools to aid development of blockchain and other decentralized software written in Java and Kotlin.
+description: Tuweni is a set of libraries and other tools to aid development of blockchain and other decentralized software written in Java and Kotlin.
 
 download: /download
-latest_release: 2.3.1
+latest_release: 2.4.1
 
-dev_list: dev@tuweni.apache.org
-dev_list_subscribe: dev-subscribe@tuweni.apache.org
-dev_list_unsubscribe: dev-unsubscribe@tuweni.apache.org
-dev_list_archive: http://mail-archives.apache.org/mod_mbox/tuweni-dev/
-dev_list_archive_mailarchive: https://www.mail-archive.com/dev@tuweni.apache.org/
-dev_list_archive_markmail:
+github_project_name: tuweni
 
-user_list: users@tuweni.apache.org
-user_list_subscribe: users-subscribe@tuweni.apache.org
-user_list_unsubscribe: users-unsubscribe@tuweni.apache.org
-user_list_archive: http://mail-archives.apache.org/mod_mbox/tuweni-users/
-user_list_archive_mailarchive: https://www.mail-archive.com/users@tuweni.apache.org/
-user_list_archive_markmail:
+source_repository: https://github.com/tmio/tuweni
 
-commits_list: commits@tuweni.apache.org
-commits_list_subscribe: commits-subscribe@tuweni.apache.org
-commits_list_unsubscribe: commits-unsubscribe@tuweni.apache.org
-commits_list_archive: http://mail-archives.apache.org/mod_mbox/tuweni-commits/
-commits_list_archive_mailarchive: https://www.mail-archive.com/commits@tuweni.apache.org/
-commits_list_archive_markmail:
-
-jira: TUWENI
-github_project_name: incubator-tuweni
-
-source_repository: https://github.com/apache/incubator-tuweni
-source_repository_mirror: https://git-wip-us.apache.org/repos/asf/incubator-tuweni.git
-
-website_repository: https://github.com/apache/incubator-tuweni-website
-website_repository_mirror: https://git-wip-us.apache.org/repos/asf/incubator-tuweni-website.git
-
-podling: true
+website_repository: https://github.com/tmio/tuweni-website

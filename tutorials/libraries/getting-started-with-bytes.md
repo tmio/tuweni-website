@@ -7,7 +7,7 @@ categories: ["bytes"]
 previous: index.md
 next: creating-bytes.md
 ---
-Apache Tuweni provides support for manipulating bytes.
+Tuweni provides support for manipulating bytes.
 
 To get started, install the `bytes` library.
 

@@ -8,7 +8,7 @@ previous: index.md
 next: creating-uints.md
 ---
 
-Apache Tuweni provides support for manipulating unsigned integers and base Ethereum currencies.
+Tuweni provides support for manipulating unsigned integers and base Ethereum currencies.
 
 To get started, install the `units` library.
 

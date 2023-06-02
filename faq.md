@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Apache Tuweni FAQ
-tagline: Apache Tuweni
+title: Tuweni FAQ
+tagline: Tuweni
 ---
 <!--
 {% comment %}
@@ -24,15 +24,15 @@ limitations under the License.
 
 {% include JB/setup %}
 
-# Apache Tuweni
+# Tuweni
 Tuweni is a Lakota language word which means both never and nobody.
 
-## What is Apache Tuweni?
-Apache Tuweni is an incubating project of the Apache Software Foundation originating from the Cava project at ConsenSys.
+## What is Tuweni?
+Tuweni is an incubating project of the Apache Software Foundation originating from the Cava project at ConsenSys.
 
 The project is mostly Java with sprinkles of Kotlin.
 
-## Why Apache Tuweni?
+## Why Tuweni?
 Tuweni stems from the need to create libraries for peer-to-peer, blockchain-based projects.
 
 We saw a great deal of fragmentation in the blockchain space early on.
@@ -46,16 +46,10 @@ The Apache Software Foundation being a merit-based organization allows for such 
 
 Committer rights are bestowed on individuals for their contributions, and are tied to their identity, rather than their day job.
 
-## What can I use Apache Tuweni for?
-Apache Tuweni is organized in roughly 4 sections:
+## What can I use Tuweni for?
+Tuweni is organized in roughly 4 sections:
 
 * Low level libraries for bytes and units, as well as popular blockchain serialization formats such as RLP and SSZ.
 * Crypto libraries based off sodium and bouncycastle, for summetric and asymmetric encryption as well as hashing.
 * Ethereum centric libraries to evaluate domain objects, index chains, implementing ethereum wire protocol and the LES subprotocol, the discv4 and discv5 discovery protocols.
 * Blockchain and peer to peer network libraries reprising the above, adding secure scuttlebutt and hobbits.
-
-## Who is Apache Tuweni?
-
-Apache Tuweni is maintained by volunteers at the Apache Software Foundation.
-
-[You too can participate.](/community)

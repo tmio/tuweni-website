@@ -18,7 +18,7 @@ highlighter: rouge
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
 
-repository: https://github.com/apache/incubator-tuweni-website
+repository: https://github.com/tmio/tuweni-website
 destination: target
 exclude: [README.md,Gemfile*]
 keep_files: [".git", ".svn", "apidocs"]

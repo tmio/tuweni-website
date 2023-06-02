@@ -16,7 +16,7 @@ NOTE: everything at this point is at best a prototype. This may change at any ti
 Usage:
 
 {%highlight bash %}
-Apache Tuweni client loading
+Tuweni client loading
 Usage: <main class> [-h] [-c=<configPath>] [-w=<web>]
   -c, --config=<configPath>
                     Configuration file.

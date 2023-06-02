@@ -5,7 +5,7 @@ description: Applications
 group: nav-right
 ---
 
-Apache Tuweni bundles applications, directly available in the binary distribution. You can download the binary distro on this [page](/download).
+Tuweni bundles applications, directly available in the binary distribution. You can download the binary distro on this [page](/download).
 
 # gossip
 
