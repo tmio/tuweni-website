@@ -13,20 +13,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-# Infra has set up a webhook at the github repo that fires this task.
-# We cannot push to github, though, but only to gitbox.
-# So we need two repositories in two directories:
-#
-# master-branch (just cloning):
-# git clone https://github.com/apache/incubator-tuweni-website.git master-branch
-# asf-site-branch (pushing):
-# git clone https://gitbox.apache.org/repos/asf/incubator-tuweni-website.git asf-site-branch
 TEMPDIR="$(mktemp  -d -t tuweni-site-XXXXXXX)"
 cd $TEMPDIR
-git clone https://github.com/apache/incubator-tuweni-website.git master-branch
-git clone https://gitbox.apache.org/repos/asf/incubator-tuweni-website.git asf-site-branch
-git clone https://github.com/apache/incubator-tuweni.git code
+git clone https://github.com/tmio/tuweni-website.git master-branch
+git clone --branch asf-site https://github.com/tmio/tuweni-website.git asf-site-branch
+git clone https://github.com/tmio/tuweni.git code
 
 #
 # Testing:
@@ -71,7 +62,7 @@ git checkout asf-site
 git fetch origin asf-site
 git pull origin asf-site
 
-cp -R ../master-branch/target/* content
+cp -R ../master-branch/target/* .
 cd ..
 
 #
@@ -80,37 +71,32 @@ cd ..
 cd code
 gradle setup
 ./gradlew dokkaHtml
-mkdir -p ../asf-site-branch/content/docs
-cp build/docs/style.css ../asf-site-branch/content/style.css
-cp -R build/docs/tuweni/* ../asf-site-branch/content/docs
+mkdir -p ../asf-site-branch/docs
+cp build/docs/style.css ../asf-site-branch/style.css
+cp -R build/docs/tuweni/* ../asf-site-branch/docs
 cd ..
 cd asf-site-branch
 
 #
 # Copy favicon to default location
 #
-cp content/assets/themes/apache/img/tuweni_face.ico content/favicon.ico
+cp assets/themes/apache/img/tuweni_face.ico favicon.ico
 
 
 #
-# Commit and push to gitbox
+# Commit and push to github
 #
 echo "Adding content..."
-git add -v content/
-echo "Commit to gitbox..."
+git add -v .
+echo "Commit"
 git status
 
-#
-# Note: the "Automated site publishing" text below is used to reject
-# builds triggered when pushing to asf-site (see git configuration above).
-# If you change this text then remember to change it above also.
-#
-git commit -v -m "Automated site publishing by Jenkins build ${BUILD_NUMBER}"
+git commit -v -m "Publishing website changes"
 if [ $? -ne 0 ]; then
     echo "Commit failed."
     exit 2
 fi
-echo "Pushing to gitbox..."
+echo "Pushing to github..."
 git push -v origin asf-site
 if [ $? -ne 0 ]; then
     echo "Push failed."
