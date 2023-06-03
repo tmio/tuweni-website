@@ -15,8 +15,8 @@
 # limitations under the License.
 TEMPDIR="$(mktemp  -d -t tuweni-site-XXXXXXX)"
 cd $TEMPDIR
-git clone https://github.com/tmio/tuweni-website.git master-branch
-git clone --branch asf-site https://github.com/tmio/tuweni-website.git asf-site-branch
+git clone git@github.com:tmio/tuweni-website.git master-branch
+git clone --branch asf-site git@github.com:tmio/tuweni-website.git asf-site-branch
 git clone https://github.com/tmio/tuweni.git code
 
 #
